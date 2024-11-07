@@ -1,0 +1,117 @@
+/*
+estado:
+00 -> M
+01 -> E
+10 -> S
+11 -> I
+
+
+msg: 
+00 -> rh
+01 -> rm
+10 -> wh
+11 -> wm
+*/
+
+
+module mesiReceptor(input [1:0] estado_in, input [1:0] msg_in, output reg [1:0] estado_out, output reg wb_out, output reg abt_mem_acs);
+	
+	always @(estado_in, msg_in) begin
+		case(estado_in) begin
+		
+			2'b00: begin // M
+				case(msg_in) begin
+					2'b00: begin // rh
+						// Do nothing
+					end
+					
+					2'b01: begin // rm
+						estado_out = 2'b10; // S
+						wb_out = 1'b1; 
+						abt_mem_acs = 1'b1;
+					end
+					
+					2'b10: begin // wh
+						// Do nothing
+					end
+					
+					2'b11: begin // wm
+						estado_out = 2'b11; // I
+						wb_out = 1'b1;
+						abt_mem_acs = 1'b1;
+					end
+				end
+			end
+			
+			2'b01: begin // E
+				case(msg_in) begin
+					2'b00: begin // rh
+						// Do nothing
+					end
+					
+					2'b01: begin // rm
+						estado_out = 2'b10; // S
+						wb_out = 1'b0;
+						abt_mem_acs = 1'b0;
+					end
+					
+					2'b10: begin // wh
+						// Do nothing
+					end
+					
+					2'b11: begin // wm
+						estado_out = 2'b11; // I
+						wb_out = 1'b0;
+						abt_mem_acs = 1'b0;
+					end
+				end
+			end
+			
+			2'b10: begin // S
+				case(msg_in) begin
+					2'b00: begin // rh
+						// Do nothing
+					end
+					
+					2'b01: begin // rm
+						estado_out = 2'b10; // S
+						wb_out = 1'b0;
+						abt_mem_acs = 1'b0;
+					end
+					
+					2'b10: begin // wh
+						// Do nothing
+					end
+					
+					2'b11: begin // wm
+						estado_out = 2'b11; // I
+						wb_out = 1'b0;
+						abt_mem_acs = 1'b0;
+					end
+				end
+			end
+			
+			2'b11: begin // I
+				case(msg_in) begin
+					2'b00: begin // rh
+						// Do nothing
+					end
+					
+					2'b01: begin // rm
+						// Do nothing
+					end
+					
+					2'b10: begin // wh
+						// Do nothing
+					end
+					
+					2'b11: begin // wm
+						// Do nothing
+					end
+				end
+			end
+			
+		end
+	end
+	
+enmodule

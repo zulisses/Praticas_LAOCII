@@ -1,0 +1,143 @@
+|mesi
+SW[0] => estado_in[0].IN2
+SW[1] => estado_in[1].IN2
+SW[2] => ~NO_FANOUT~
+SW[3] => ~NO_FANOUT~
+SW[4] => ~NO_FANOUT~
+SW[5] => estado_out.OUTPUTSELECT
+SW[5] => estado_out.OUTPUTSELECT
+SW[5] => estado_out.OUTPUTSELECT
+SW[5] => estado_out.OUTPUTSELECT
+SW[5] => msg_out.OUTPUTSELECT
+SW[5] => msg_out.OUTPUTSELECT
+SW[5] => msg_out.OUTPUTSELECT
+SW[5] => msg_out.OUTPUTSELECT
+SW[5] => wb_out.OUTPUTSELECT
+SW[5] => wb_out.OUTPUTSELECT
+SW[5] => wb_out.OUTPUTSELECT
+SW[5] => wb_out.OUTPUTSELECT
+SW[6] => ~NO_FANOUT~
+SW[7] => ~NO_FANOUT~
+SW[8] => ~NO_FANOUT~
+SW[9] => ~NO_FANOUT~
+SW[10] => shared.IN1
+SW[11] => ~NO_FANOUT~
+SW[12] => ~NO_FANOUT~
+SW[13] => ~NO_FANOUT~
+SW[14] => ~NO_FANOUT~
+SW[15] => ~NO_FANOUT~
+SW[16] => msg_in[0].IN2
+SW[17] => msg_in[1].IN2
+HEX0[6] <= decodificadorComportamental:d0.port1
+HEX0[5] <= decodificadorComportamental:d0.port1
+HEX0[4] <= decodificadorComportamental:d0.port1
+HEX0[3] <= decodificadorComportamental:d0.port1
+HEX0[2] <= decodificadorComportamental:d0.port1
+HEX0[1] <= decodificadorComportamental:d0.port1
+HEX0[0] <= decodificadorComportamental:d0.port1
+HEX1[6] <= decodificadorComportamental:d1.port1
+HEX1[5] <= decodificadorComportamental:d1.port1
+HEX1[4] <= decodificadorComportamental:d1.port1
+HEX1[3] <= decodificadorComportamental:d1.port1
+HEX1[2] <= decodificadorComportamental:d1.port1
+HEX1[1] <= decodificadorComportamental:d1.port1
+HEX1[0] <= decodificadorComportamental:d1.port1
+HEX2[6] <= decodificadorComportamental:d2.port1
+HEX2[5] <= decodificadorComportamental:d2.port1
+HEX2[4] <= decodificadorComportamental:d2.port1
+HEX2[3] <= decodificadorComportamental:d2.port1
+HEX2[2] <= decodificadorComportamental:d2.port1
+HEX2[1] <= decodificadorComportamental:d2.port1
+HEX2[0] <= decodificadorComportamental:d2.port1
+
+
+|mesi|mesiEmissor:me
+estado_in[0] => Mux0.IN5
+estado_in[0] => Mux1.IN5
+estado_in[0] => Mux2.IN4
+estado_in[0] => Mux3.IN5
+estado_in[0] => Decoder1.IN1
+estado_in[1] => Mux0.IN4
+estado_in[1] => Mux1.IN4
+estado_in[1] => Mux2.IN3
+estado_in[1] => Mux3.IN4
+estado_in[1] => Decoder1.IN0
+msg_in[0] => Decoder0.IN1
+msg_in[0] => Mux2.IN5
+msg_in[1] => Decoder0.IN0
+msg_in[1] => estado_out.OUTPUTSELECT
+msg_in[1] => estado_out.OUTPUTSELECT
+msg_in[1] => msg_out[1].DATAIN
+shared => estado_out.DATAA
+shared => estado_out.DATAA
+estado_out[0] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+estado_out[1] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+msg_out[0] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+msg_out[1] <= msg_in[1].DB_MAX_OUTPUT_PORT_TYPE
+wb <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+fazNada <= fazNada.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mesi|mesiReceptor:mr
+estado_in[0] => Mux0.IN2
+estado_in[0] => Mux1.IN5
+estado_in[0] => Mux2.IN5
+estado_in[0] => Mux3.IN5
+estado_in[1] => Mux0.IN1
+estado_in[1] => Mux1.IN4
+estado_in[1] => Mux2.IN4
+estado_in[1] => Mux3.IN4
+msg_in[0] => Decoder0.IN1
+msg_in[1] => Decoder0.IN0
+msg_in[1] => Mux0.IN3
+msg_in[1] => Mux0.IN4
+msg_in[1] => Mux0.IN5
+estado_out[0] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+estado_out[1] <= <VCC>
+wb <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+abt_mem_acs <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+fazNada <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mesi|decodificadorComportamental:d0
+SW[0] => Decoder0.IN3
+SW[1] => Decoder0.IN2
+SW[2] => Decoder0.IN1
+SW[3] => Decoder0.IN0
+HEX0[6] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[5] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[4] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[2] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[1] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[0] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mesi|decodificadorComportamental:d1
+SW[0] => Decoder0.IN3
+SW[1] => Decoder0.IN2
+SW[2] => Decoder0.IN1
+SW[3] => Decoder0.IN0
+HEX0[6] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[5] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[4] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[2] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[1] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[0] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mesi|decodificadorComportamental:d2
+SW[0] => Decoder0.IN3
+SW[1] => Decoder0.IN2
+SW[2] => Decoder0.IN1
+SW[3] => Decoder0.IN0
+HEX0[6] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[5] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[4] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[2] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[1] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[0] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+

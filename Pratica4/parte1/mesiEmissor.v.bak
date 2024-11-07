@@ -1,0 +1,108 @@
+/*
+estado:
+00 -> M
+01 -> E
+10 -> S
+11 -> I
+
+
+msg: 
+00 -> rh
+01 -> rm
+10 -> wh
+11 -> wm
+*/
+
+
+module mesiEmissor(input [1:0] estado_in, input [1:0] msg_in, output reg estado_out, output reg [1:0] wb_out);
+	
+	always @(estado_in, msg_in) begin
+		case(estado_in) begin
+		
+			2'b00: begin // M
+				case(msg_in) begin
+					2'b00: begin // rh
+						estado_out = 2'b00; // M
+						wb_out = 1'b0;	
+					end
+					
+					2'b01: begin // rm
+						estado_out = 2'b00; // M
+						wb_out = 1'b1; 
+					end
+					
+					2'b10: begin // wh
+						estado_out = 2'b00; // M
+						wb_out = 1'b0; 
+					end
+					
+					2'b11: begin // wm
+						
+					end
+				end
+			end
+			
+			2'b01: begin // E
+				case(msg_in) begin
+					2'b00: begin // rh
+						
+					end
+					
+					2'b01: begin // rm
+						
+					end
+					
+					2'b10: begin // wh
+						
+					end
+					
+					2'b11: begin // wm
+						
+					end
+				end
+			end
+			
+			2'b10: begin // S
+				case(msg_in) begin
+					2'b00: begin // rh
+						
+					end
+					
+					2'b01: begin // rm
+						
+					end
+					
+					2'b10: begin // wh
+						
+					end
+					
+					2'b11: begin // wm
+						
+					end
+				end
+			end
+			
+			2'b11: begin // I
+				case(msg_in) begin
+					2'b00: begin // rh
+						
+					end
+					
+					2'b01: begin // rm
+						
+					end
+					
+					2'b10: begin // wh
+						
+					end
+					
+					2'b11: begin // wm
+						
+					end
+				end
+			end
+			
+		end
+	end
+	
+enmodule

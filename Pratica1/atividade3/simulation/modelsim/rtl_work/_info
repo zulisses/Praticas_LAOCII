@@ -1,0 +1,109 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\Faculdade\LAOC II\pratica1\atividade3\simulation\modelsim
+vatividade3
+Ic6IbN9gzXGYlCJ5H0hA@[2
+V]0a30n>?WG=88Ui]A]b:50
+Z1 dD:\Faculdade\LAOC II\pratica1\atividade3\simulation\modelsim
+w1693072687
+8D:/Faculdade/LAOC II/pratica1/atividade3/atividade3.v
+FD:/Faculdade/LAOC II/pratica1/atividade3/atividade3.v
+L0 1
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+Z4 !s92 -vlog01compat -work work {+incdir+D:/Faculdade/LAOC II/pratica1/atividade3} -O0
+!i10b 1
+!s100 Gf243Mkf9@NF]R0<k[C?]3
+!s85 0
+!s108 1693170049.175000
+!s107 D:/Faculdade/LAOC II/pratica1/atividade3/atividade3.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Faculdade/LAOC II/pratica1/atividade3|D:/Faculdade/LAOC II/pratica1/atividade3/atividade3.v|
+!s101 -O0
+vcacheL1
+IOjIk4D9a5XU767^e[Cedm2
+V_:51V=KU0MVZf__>S4LW02
+R1
+w1693170001
+8D:/Faculdade/LAOC II/pratica1/atividade3/cacheL1.v
+FD:/Faculdade/LAOC II/pratica1/atividade3/cacheL1.v
+L0 1
+R2
+r1
+31
+R3
+R4
+ncache@l1
+!i10b 1
+!s100 cEFB=<WDUOm1@V8>1Y7da3
+!s85 0
+!s108 1693170049.242000
+!s107 D:/Faculdade/LAOC II/pratica1/atividade3/cacheL1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Faculdade/LAOC II/pratica1/atividade3|D:/Faculdade/LAOC II/pratica1/atividade3/cacheL1.v|
+!s101 -O0
+vdecodificadorComportamental
+I?PCGeiP7Rg^@]RRWZ:G`j2
+VkWa0J2@d9A_@>klZVlK=Q2
+R1
+w1692913878
+8D:/Faculdade/LAOC II/pratica1/atividade3/decodificadorComportamental.v
+FD:/Faculdade/LAOC II/pratica1/atividade3/decodificadorComportamental.v
+L0 1
+R2
+r1
+31
+R3
+R4
+ndecodificador@comportamental
+!i10b 1
+!s100 QlobM2^YfIaR1W;cB:26?2
+!s85 0
+!s108 1693170049.291000
+!s107 D:/Faculdade/LAOC II/pratica1/atividade3/decodificadorComportamental.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Faculdade/LAOC II/pratica1/atividade3|D:/Faculdade/LAOC II/pratica1/atividade3/decodificadorComportamental.v|
+!s101 -O0
+vmemoriaCache
+IZ5Koih6maI@^2=h[`9;dB3
+VPVK=[TESecO;H00OO8TXQ1
+R1
+w1692911604
+8D:/Faculdade/LAOC II/pratica1/atividade3/memoriacache.v
+FD:/Faculdade/LAOC II/pratica1/atividade3/memoriacache.v
+L0 39
+R2
+r1
+31
+R3
+R4
+nmemoria@cache
+!i10b 1
+!s100 kPBGg_[HlF6cPXJ;YYGS@3
+!s85 0
+!s108 1693170049.342000
+!s107 D:/Faculdade/LAOC II/pratica1/atividade3/memoriacache.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Faculdade/LAOC II/pratica1/atividade3|D:/Faculdade/LAOC II/pratica1/atividade3/memoriacache.v|
+!s101 -O0
+vmemoriaPrincipal
+!i10b 1
+!s100 <hUYQ^6Q89IG0;KO9iQIG0
+I6VdHB`UCP66NUi=Y>bO@A0
+VkQ`aI465QQNCQ]n2Wdc_:2
+R1
+w1692937517
+8D:/Faculdade/LAOC II/pratica1/atividade3/memoriaprincipal.v
+FD:/Faculdade/LAOC II/pratica1/atividade3/memoriaprincipal.v
+L0 39
+R2
+r1
+!s85 0
+31
+!s108 1693170049.382000
+!s107 D:/Faculdade/LAOC II/pratica1/atividade3/memoriaprincipal.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Faculdade/LAOC II/pratica1/atividade3|D:/Faculdade/LAOC II/pratica1/atividade3/memoriaprincipal.v|
+!s101 -O0
+R3
+R4
+nmemoria@principal

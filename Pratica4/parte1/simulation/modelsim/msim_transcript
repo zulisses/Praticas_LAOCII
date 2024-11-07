@@ -1,0 +1,102 @@
+# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do mesi_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+D:/Faculdade/LAOC\ II/pratica4/parte1 {D:/Faculdade/LAOC II/pratica4/parte1/mesi.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mesi
+# 
+# Top level modules:
+# 	mesi
+# vlog -vlog01compat -work work +incdir+D:/Faculdade/LAOC\ II/pratica4/parte1 {D:/Faculdade/LAOC II/pratica4/parte1/mesiEmissor.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mesiEmissor
+# 
+# Top level modules:
+# 	mesiEmissor
+# vlog -vlog01compat -work work +incdir+D:/Faculdade/LAOC\ II/pratica4/parte1 {D:/Faculdade/LAOC II/pratica4/parte1/mesiReceptor.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mesiReceptor
+# 
+# Top level modules:
+# 	mesiReceptor
+# vlog -vlog01compat -work work +incdir+D:/Faculdade/LAOC\ II/pratica4/parte1 {D:/Faculdade/LAOC II/pratica4/parte1/decodificadorComportamentali.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module decodificadorComportamental
+# 
+# Top level modules:
+# 	decodificadorComportamental
+# 
+vsim +altera -do mesi_run_msim_rtl_verilog.do -l msim_transcript -gui work.mesi
+# vsim +altera -do mesi_run_msim_rtl_verilog.do -l msim_transcript -gui work.mesi 
+# Loading work.mesi
+# Loading work.mesiEmissor
+# Loading work.mesiReceptor
+# Loading work.decodificadorComportamental
+# do mesi_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+D:/Faculdade/LAOC\ II/pratica4/parte1 {D:/Faculdade/LAOC II/pratica4/parte1/mesi.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mesi
+# 
+# Top level modules:
+# 	mesi
+# vlog -vlog01compat -work work +incdir+D:/Faculdade/LAOC\ II/pratica4/parte1 {D:/Faculdade/LAOC II/pratica4/parte1/mesiEmissor.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mesiEmissor
+# 
+# Top level modules:
+# 	mesiEmissor
+# vlog -vlog01compat -work work +incdir+D:/Faculdade/LAOC\ II/pratica4/parte1 {D:/Faculdade/LAOC II/pratica4/parte1/mesiReceptor.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mesiReceptor
+# 
+# Top level modules:
+# 	mesiReceptor
+# vlog -vlog01compat -work work +incdir+D:/Faculdade/LAOC\ II/pratica4/parte1 {D:/Faculdade/LAOC II/pratica4/parte1/decodificadorComportamentali.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module decodificadorComportamental
+# 
+# Top level modules:
+# 	decodificadorComportamental
+# 
+wave create -driver freeze -pattern constant -value 000000000000000011 -range 17 0 -starttime 0ps -endtime 1000ps sim:/mesi/SW
+add wave -position insertpoint  \
+sim:/mesi/emsOuRcpt
+add wave -position insertpoint  \
+sim:/mesi/estado_in
+add wave -position insertpoint  \
+sim:/mesi/msg_in
+add wave -position insertpoint  \
+sim:/mesi/estado_ems
+add wave -position insertpoint  \
+sim:/mesi/msg_ems
+add wave -position insertpoint  \
+sim:/mesi/estado_rcpt
+add wave -position insertpoint  \
+sim:/mesi/estado_out
+add wave -position insertpoint  \
+sim:/mesi/msg_out
+add wave -position insertpoint  \
+sim:/mesi/shared
+add wave -position insertpoint  \
+sim:/mesi/wb_ems
+add wave -position insertpoint  \
+sim:/mesi/wb_rcpt
+add wave -position insertpoint  \
+sim:/mesi/wb_out
+run

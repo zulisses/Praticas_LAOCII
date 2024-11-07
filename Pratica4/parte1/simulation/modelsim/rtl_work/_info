@@ -1,0 +1,88 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\Faculdade\LAOC II\pratica4\parte1\simulation\modelsim
+vdecodificadorComportamental
+!i10b 1
+!s100 l2``Vc0J0XnTo=?6fnmBg3
+I524CMO1azDLX6_i[Bd7XV2
+VkWa0J2@d9A_@>klZVlK=Q2
+Z1 dD:\Faculdade\LAOC II\pratica4\parte1\simulation\modelsim
+w1700142201
+8D:/Faculdade/LAOC II/pratica4/parte1/decodificadorComportamentali.v
+FD:/Faculdade/LAOC II/pratica4/parte1/decodificadorComportamentali.v
+L0 1
+Z2 OV;L;10.1d;51
+r1
+!s85 0
+31
+!s108 1700147045.715000
+!s107 D:/Faculdade/LAOC II/pratica4/parte1/decodificadorComportamentali.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Faculdade/LAOC II/pratica4/parte1|D:/Faculdade/LAOC II/pratica4/parte1/decodificadorComportamentali.v|
+!s101 -O0
+Z3 o-vlog01compat -work work -O0
+Z4 !s92 -vlog01compat -work work {+incdir+D:/Faculdade/LAOC II/pratica4/parte1} -O0
+ndecodificador@comportamental
+vmesi
+I42Jl9Sac>g[EkNjFJ[NWT1
+VlQYa@4nZ@oDoKQcMddP5l0
+R1
+w1700146992
+8D:/Faculdade/LAOC II/pratica4/parte1/mesi.v
+FD:/Faculdade/LAOC II/pratica4/parte1/mesi.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 MY]AKLWWicLhSmU<UQkJR3
+!s85 0
+!s108 1700147045.532000
+!s107 D:/Faculdade/LAOC II/pratica4/parte1/mesi.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Faculdade/LAOC II/pratica4/parte1|D:/Faculdade/LAOC II/pratica4/parte1/mesi.v|
+!s101 -O0
+vmesiEmissor
+I1MHe>HgioAT>hdXan3eHL0
+VK2R9aIGg;8dTJo19ZGm@j2
+R1
+w1700146112
+8D:/Faculdade/LAOC II/pratica4/parte1/mesiEmissor.v
+FD:/Faculdade/LAOC II/pratica4/parte1/mesiEmissor.v
+L0 17
+R2
+r1
+31
+R3
+R4
+nmesi@emissor
+!i10b 1
+!s100 NTjo=anXWdnOE^=3XhR_V0
+!s85 0
+!s108 1700147045.606000
+!s107 D:/Faculdade/LAOC II/pratica4/parte1/mesiEmissor.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Faculdade/LAOC II/pratica4/parte1|D:/Faculdade/LAOC II/pratica4/parte1/mesiEmissor.v|
+!s101 -O0
+vmesiReceptor
+I4I6Dj[ggbi<ZCF^eP;R;N0
+VCB:Wg_:BkSDU_kE56l0;o3
+R1
+w1700146997
+8D:/Faculdade/LAOC II/pratica4/parte1/mesiReceptor.v
+FD:/Faculdade/LAOC II/pratica4/parte1/mesiReceptor.v
+L0 17
+R2
+r1
+31
+R3
+R4
+nmesi@receptor
+!i10b 1
+!s100 T6WJV_LgJXM8n3PNi=g301
+!s85 0
+!s108 1700147045.653000
+!s107 D:/Faculdade/LAOC II/pratica4/parte1/mesiReceptor.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Faculdade/LAOC II/pratica4/parte1|D:/Faculdade/LAOC II/pratica4/parte1/mesiReceptor.v|
+!s101 -O0
